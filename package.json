@@ -1,0 +1,27 @@
+{
+  "name": "real-estate-listings",
+  "version": "1.0.0",
+  "description": "Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. After importing the data (instructions below), you should have two collections, *listings* and *rentals*. Inside of your collections, you will find information for properties that are either \"for rent\" or \"for sale\".",
+  "main": "listingData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decookr/real-estate-listings-weekend-5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decookr/real-estate-listings-weekend-5/issues"
+  },
+  "homepage": "https://github.com/decookr/real-estate-listings-weekend-5#readme",
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  }
+}
