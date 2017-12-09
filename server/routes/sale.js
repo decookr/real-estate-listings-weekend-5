@@ -14,18 +14,18 @@ router.get('/', function (req, res) {
     });
 });
 
-// router.post('/', function (req, res) {
-//     // a post request for sale
-//     var addSale = new Sale(req.body);
+router.post('/', function (req, res) {
+    // a post request for sale
+    var addListing = new Listing(req.body);
 
-//     addSale.save(function(errorMakingDatabaseQuery, data){
-//         if (errorMakingDatabaseQuery){
-//             console.log('error with sale save', errorMakingDatabaseQuery);
-//             res.sendStatus(500);   
-//         } else{
-//             res.sendStatus(201);
-//         }
-//     });
-// });
+    addListing.save(function(errorMakingDatabaseQuery, data){
+        if (errorMakingDatabaseQuery){
+            console.log('error with sale save', errorMakingDatabaseQuery);
+            res.sendStatus(500);   
+        } else{
+            res.sendStatus(201);
+        }
+    });
+});
 
 module.exports = router; 

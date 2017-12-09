@@ -13,16 +13,17 @@ app.service('RentService', ['$http', function($http){
         });
     };
 
-    // self.addNewHero = function (newHero) {
+    // self.addNewRental = function (newRental) {
     //     $http({
     //         method: 'POST',
-    //         url: '/hero/all',
-    //         data: newHero,
+    //         url: '/rent/',
+    //         data: newRental,
     //     }).then(function (response) {
     //         console.log('response', response);
-    //         self.getHero();
-    //         newHero.name='',
-    //         newHero.backstory='';
+    //         self.getRent();
+    //         newRental.rent='',
+    //         newRental.sqft='',
+    //         newRental.city='';
     //     });
     // }
 

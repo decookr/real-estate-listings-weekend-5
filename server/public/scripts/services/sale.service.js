@@ -13,16 +13,18 @@ app.service('SaleService', ['$http', function($http){
         });
     };
 
-    // self.addNewHero = function (newHero) {
+    // self.addNewListing = function (newListing) {
+    //     console.log(newListing);
     //     $http({
     //         method: 'POST',
-    //         url: '/hero/all',
-    //         data: newHero,
+    //         url: '/sale/',
+    //         data: newListing
     //     }).then(function (response) {
     //         console.log('response', response);
-    //         self.getHero();
-    //         newHero.name='',
-    //         newHero.backstory='';
+    //         self.getSale();
+    //         newListing.cost='',
+    //         newListing.sqft='',
+    //         newListing.city='';
     //     });
     // }
 
