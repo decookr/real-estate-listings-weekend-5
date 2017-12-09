@@ -1,6 +1,5 @@
-app.service('AddService', ['$http', function($http){
-    var self = this; //this self refers to service, not something else in project
-
+app.service('AddService', ['$http', function ($http) {
+    var self = this;
 
     self.addNewRental = function (newRental) {
         $http({
@@ -9,10 +8,9 @@ app.service('AddService', ['$http', function($http){
             data: newRental,
         }).then(function (response) {
             console.log('response', response);
-            // self.getRent();
-            newRental.rent='',
-            newRental.sqft='',
-            newRental.city='';
+            newRental.rent = '',
+            newRental.sqft = '',
+            newRental.city = '';
         });
     }
 
@@ -24,10 +22,9 @@ app.service('AddService', ['$http', function($http){
             data: newListing
         }).then(function (response) {
             console.log('response', response);
-            // self.getSale();
-            newListing.cost='',
-            newListing.sqft='',
-            newListing.city='';
+            newListing.cost = '',
+            newListing.sqft = '',
+            newListing.city = '';
         });
     }
 }]);

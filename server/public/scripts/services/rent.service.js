@@ -1,4 +1,4 @@
-app.service('RentService', ['$http', function($http){
+app.service('RentService', ['$http', function ($http) {
     var self = this; //this self refers to service, not something else in project
 
     self.rent = { list: [] };  //empty array for rentals to go into, use object
@@ -13,19 +13,6 @@ app.service('RentService', ['$http', function($http){
         });
     };
 
-    // self.addNewRental = function (newRental) {
-    //     $http({
-    //         method: 'POST',
-    //         url: '/rent/',
-    //         data: newRental,
-    //     }).then(function (response) {
-    //         console.log('response', response);
-    //         self.getRent();
-    //         newRental.rent='',
-    //         newRental.sqft='',
-    //         newRental.city='';
-    //     });
-    // }
 
     // self.deleteHero = function (heroToDelete) {
     //     console.log(heroToDelete);

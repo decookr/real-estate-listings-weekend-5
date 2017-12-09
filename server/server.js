@@ -21,6 +21,6 @@ app.use('/sale', sale);
 
 
 //START SERVER
-app.listen(port, function(){
-    console.log('listening on port', port);  
+app.listen(port, function () {
+    console.log('listening on port', port);
 });
