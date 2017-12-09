@@ -14,15 +14,15 @@ app.service('RentService', ['$http', function ($http) {
     };
 
 
-    // self.deleteHero = function (heroToDelete) {
-    //     console.log(heroToDelete);
-    //     $http({
-    //         method: 'DELETE',
-    //         url: '/hero/' + heroToDelete.id,
-    //     }).then(function (response) {
-    //         console.log('response', response);
-    //         self.getHero();
-    //     });
-    // };
+    self.deleteRental = function (rentalToDelete) {
+        console.log(rentalToDelete);
+        $http({
+            method: 'DELETE',
+            url: '/rent/' + rentalToDelete.id,
+        }).then(function (response) {
+            console.log('response', response);
+            self.getRent();
+        });
+    };
 
 }]);

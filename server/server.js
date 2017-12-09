@@ -10,9 +10,9 @@ var sale = require('./routes/sale');
 var app = express();
 
 //MIDDLEWARE
-app.use(bodyParser.json());//needed for Angular
+app.use(bodyParser.json());
 app.use(express.static('server/public'));
-mongooseConnection.connect();//module to spin up mongoose
+mongooseConnection.connect();
 
 
 //EXPRESS ROUTES
