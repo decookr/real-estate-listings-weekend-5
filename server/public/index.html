@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="vendors/angular.js"></script>
-    <script src="vendors/angular-route.js"></script>    
+    <script src="vendors/angular-route.js"></script>
     <script src="scripts/client.js"></script>
 
     <!-- Controllers -->
@@ -23,8 +23,16 @@
 </head>
 
 <body ng-app="RealEstateApp">
-    <a href="#!">For Sale</a>
-    <a href="#!rent">For Rent</a>
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <span class="navbar-text">
+                <a class="navbar-brand" href="#!">Properties For Sale</a>
+                <a class="navbar-brand" href="#!rent">Properties For Rent</a>
+                <a class="navbar-brand" href="#!add-listing">Add Listing</a>
+                
+            </span>
+        </nav>
+    </div>
     <ng-view></ng-view>
 </body>
 

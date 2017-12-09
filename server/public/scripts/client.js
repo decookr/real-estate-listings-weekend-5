@@ -7,6 +7,9 @@ app.config(function($routeProvider) {
     }).when('/rent', {
         templateUrl: '/views/rent.html',
         controller: 'RentController as vm'
+    }).when('/add-listing', {
+        templateUrl: '/views/add-listing.html',
+        controller: 'RentController as vm'
     }).otherwise({
         template: '<h1>404</h1>'
     });
