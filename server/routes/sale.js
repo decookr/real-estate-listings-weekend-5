@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var Sale = require('../models/sale.schema');
+var Listing = require('../models/listing.schema');
 
 router.get('/', function (req, res) {
     // a get request for all for sale
-    Sale.find({}, function(errorMakingDatabaseQuery, data){
+    Listing.find({}, function(errorMakingDatabaseQuery, data){
         if (errorMakingDatabaseQuery){
             console.log('error with sale find', errorMakingDatabaseQuery);
             res.sendStatus(500);   
