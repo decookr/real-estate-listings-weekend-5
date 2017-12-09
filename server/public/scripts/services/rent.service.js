@@ -1,7 +1,7 @@
 app.service('RentService', ['$http', function($http){
     var self = this; //this self refers to service, not something else in project
 
-    self.rent = { list: [] };  //empty array for companies to go into, use object
+    self.rent = { list: [] };  //empty array for rentals to go into, use object
 
     self.getRent = function () {
         $http({

@@ -1,1 +1,33 @@
-<h1>For Rent</h1>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Properties For Rent</h1>
+    </div>
+
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Total Rent (yearly)</th>
+                    <th>Square Footage</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="rental in vm.rent.list">
+                    <td>
+                        {{rental.rent}}
+                    </td>
+                    <td>
+                        {{rental.sqft}}
+                    </td>
+                    <td>
+                        {{rental.city}}
+                    </td>
+                    <td>
+                        <button ng-click="vm.deleteHero(hero)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

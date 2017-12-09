@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var Rent = require('../models/rent.schema');
+var Rental = require('../models/rental.schema');
 
 router.get('/', function (req, res) {
     // a get request for all for sale
-    Rent.find({}, function(errorMakingDatabaseQuery, data){
+    Rental.find({}, function(errorMakingDatabaseQuery, data){
         if (errorMakingDatabaseQuery){
-            console.log('error with rent find', errorMakingDatabaseQuery);
+            console.log('error with rental find', errorMakingDatabaseQuery);
             res.sendStatus(500);   
         }else{
             res.send(data);

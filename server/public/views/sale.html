@@ -1,1 +1,34 @@
-<h1>For Sale</h1>
+<div class="container">
+        <div class="jumbotron">
+            <h1>Properties For Sale</h1>
+        </div>
+    
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Cost</th>
+                        <th>Square Footage</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="listing in vm.sale.list">
+                        <td>
+                            {{listing.cost}}
+                        </td>
+                        <td>
+                            {{listing.sqft}}
+                        </td>
+                        <td>
+                            {{listing.city}}
+                        </td>
+                        <td>
+                            <button ng-click="vm.deleteHero(hero)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
