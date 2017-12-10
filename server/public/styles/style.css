@@ -1,14 +1,20 @@
 .navbar {
-    background-color: #493548
+    background-color: #070707
 }
 
 body {
-    background-color: #E6EBE0
+    background-color: #F2F4F3;    
+}
+.pageTitle {
+    margin-top: 255px;
+    opacity: 1.0;
 }
 
 .jumbotron {
-    background-color: #9BC1BC;
-    color: #493548
+    background-image: url('/images/house3.jpeg');
+    background-color: #40434E;
+    color: rgb(255, 255, 255);    
+    height: 385px;
 }
 
 .radio-inline {
