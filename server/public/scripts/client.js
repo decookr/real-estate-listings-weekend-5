@@ -1,6 +1,6 @@
 var app = angular.module('RealEstateApp', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/views/sale.html',
         controller: 'SaleController as vm'

@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 var Listing = require('../models/listing.schema');
 
+//get for sale listings
 router.get('/', function (req, res) {
-    // a get request for all for sale
     Listing.find({}, function (errorMakingDatabaseQuery, data) {
         if (errorMakingDatabaseQuery) {
-            console.log('error with sale find', errorMakingDatabaseQuery);
+            console.log('error with for sale find', errorMakingDatabaseQuery);
             res.sendStatus(500);
         } else {
             res.send(data);
@@ -14,13 +14,12 @@ router.get('/', function (req, res) {
     });
 });
 
+//add for sale listings
 router.post('/', function (req, res) {
-    // a post request for sale
     var addListing = new Listing(req.body);
-
     addListing.save(function (errorMakingDatabaseQuery, data) {
         if (errorMakingDatabaseQuery) {
-            console.log('error with sale save', errorMakingDatabaseQuery);
+            console.log('error with new listing save', errorMakingDatabaseQuery);
             res.sendStatus(500);
         } else {
             res.sendStatus(201);
@@ -28,6 +27,7 @@ router.post('/', function (req, res) {
     });
 });
 
+//delete for sale listings
 router.delete('/:id', function (req,res){
     Listing.remove({ _id: req.params.id }, function(errorMakingDatabaseQuery, result) {
         if (errorMakingDatabaseQuery) {

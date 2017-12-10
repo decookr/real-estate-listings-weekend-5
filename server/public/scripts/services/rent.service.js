@@ -1,21 +1,18 @@
 app.service('RentService', ['$http', function ($http) {
-    var self = this; //this self refers to service, not something else in project
-
-    self.rent = { list: [] };  //empty array for rentals to go into, use object
+    var self = this;
+    self.rent = { list: [] };
 
     self.getRent = function () {
         $http({
             method: 'GET',
             url: '/rent/',
         }).then(function (response) {
-            console.log('response', response.data); ///response.data will just send back the array of objects, not all the extra info
+            console.log('response', response.data);
             self.rent.list = response.data;
         });
     };
 
-
     self.deleteRental = function (rental) {
-        console.log(rental);
         $http({
             method: 'DELETE',
             url: '/rent/' + rental._id,
@@ -25,5 +22,4 @@ app.service('RentService', ['$http', function ($http) {
             self.getRent();
         });
     };
-
 }]);
