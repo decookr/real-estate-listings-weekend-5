@@ -28,4 +28,16 @@ router.post('/', function (req, res) {
     });
 });
 
+router.delete('/:id', function (req,res){
+    Listing.remove({ _id: req.params.id }, function(errorMakingDatabaseQuery, result) {
+        if (errorMakingDatabaseQuery) {
+            console.log('error with listing delete', errorMakingDatabaseQuery);
+            res.sendStatus(500);
+        } else {
+            console.log('result', result);
+            res.sendStatus(200);
+        }     
+    }) 
+});
+
 module.exports = router; 

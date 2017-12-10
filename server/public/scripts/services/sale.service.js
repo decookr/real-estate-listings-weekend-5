@@ -13,15 +13,16 @@ app.service('SaleService', ['$http', function ($http) {
         });
     };
 
-    // self.deleteHero = function (heroToDelete) {
-    //     console.log(heroToDelete);
-    //     $http({
-    //         method: 'DELETE',
-    //         url: '/hero/' + heroToDelete.id,
-    //     }).then(function (response) {
-    //         console.log('response', response);
-    //         self.getHero();
-    //     });
-    // };
+    self.deleteListing = function (listing) {
+        console.log(listing);
+        $http({
+            method: 'DELETE',
+            url: '/sale/' + listing._id,
+            data: listing
+        }).then(function (response) {
+            console.log('response', response);
+            self.getSale();
+        });
+    };
 
 }]);

@@ -14,11 +14,12 @@ app.service('RentService', ['$http', function ($http) {
     };
 
 
-    self.deleteRental = function (rentalToDelete) {
-        console.log(rentalToDelete);
+    self.deleteRental = function (rental) {
+        console.log(rental);
         $http({
             method: 'DELETE',
-            url: '/rent/' + rentalToDelete.id,
+            url: '/rent/' + rental._id,
+            data: rental
         }).then(function (response) {
             console.log('response', response);
             self.getRent();
