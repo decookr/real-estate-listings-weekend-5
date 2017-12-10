@@ -8,11 +8,11 @@ You job is to get this data onto the DOM. Use client side routing (`angular-rout
 
 ## Project Requirements
 
-- [ ] Create a Full Stack application from the ground up using Angular, Node, Express, and MongoDB
-- [ ] Work with the data set that we have provide for you
-- [ ] Account for the different data properties ("rent" versus "cost") and ensure that this is noted on the display of the information, by listing "For Rent" or "For Sale" based on which of the two properties that it has.
-- [ ] 2 routes, each with a controller and template file. One set for "For Rent" properties and another set for "For Sale" properties
-- [ ] Create an interface for adding additional rental or housing properties to the collection(s). You will need to give the user an option for either a Rent property, or a Sale property
+- [X] Create a Full Stack application from the ground up using Angular, Node, Express, and MongoDB
+- [X] Work with the data set that we have provide for you
+- [X] Account for the different data properties ("rent" versus "cost") and ensure that this is noted on the display of the information, by listing "For Rent" or "For Sale" based on which of the two properties that it has.
+- [X] 2 routes, each with a controller and template file. One set for "For Rent" properties and another set for "For Sale" properties
+- [X] Create an interface for adding additional rental or housing properties to the collection(s). You will need to give the user an option for either a Rent property, or a Sale property
 
 ## Importing the Provided Data File
 
@@ -26,8 +26,8 @@ There is no need to do any initial setup on the database. The following commands
 
 ## Hard Mode
 
-- [ ] Ability to delete an existing listings
-- [ ] Move all HTTP/Ajax requests to Angular Service(s)
+- [X] Ability to delete an existing listings
+- [X] Move all HTTP/Ajax requests to Angular Service(s)
 
 ## Pro Mode
 
