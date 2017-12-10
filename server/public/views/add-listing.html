@@ -1,5 +1,5 @@
 <div class="container">
-    <h3>Add New Listing</h3>
+    <h1>Add New Listing</h1>
     <div class="form-group row">
         <div class="col-xs-4">
             <label class="radio-inline">
@@ -8,17 +8,17 @@
                 <input type="radio" name="optradio" ng-model="type" value="rent">For Rent</label>
             <br>
             <br>
-            <input ng-show="type == 'rent'" type="text" class="form-control input" placeholder="Yearly Rent" ng-model="vm.newRental.rent">            
-            <input ng-show="type == 'sale'" type="text" class="form-control input" placeholder="Price" ng-model="vm.newListing.cost">
+            <input ng-show="type == 'rent'" type="text" class="form-control input-lg" placeholder="Yearly Rent" ng-model="vm.newRental.rent">            
+            <input ng-show="type == 'sale'" type="text" class="form-control input-lg" placeholder="Listing Price" ng-model="vm.newListing.cost">
             <br>
-            <input ng-show="type == 'rent'" type="text" class="form-control input" placeholder="Square Footage" ng-model="vm.newRental.sqft">
-            <input ng-show="type == 'sale'"type="text" class="form-control input" placeholder="Square Footage" ng-model="vm.newListing.sqft">
+            <input ng-show="type == 'rent'" type="text" class="form-control input-lg" placeholder="Square Footage" ng-model="vm.newRental.sqft">
+            <input ng-show="type == 'sale'"type="text" class="form-control input-lg" placeholder="Square Footage" ng-model="vm.newListing.sqft">
             <br>
-            <input ng-show="type == 'rent'" type="text" class="form-control input" placeholder="City" ng-model="vm.newRental.city">            
-            <input ng-show="type == 'sale'" type="text" class="form-control input" placeholder="City" ng-model="vm.newListing.city">
+            <input ng-show="type == 'rent'" type="text" class="form-control input-lg" placeholder="City" ng-model="vm.newRental.city">            
+            <input ng-show="type == 'sale'" type="text" class="form-control input-lg" placeholder="City" ng-model="vm.newListing.city">
             <br>
-            <button ng-show="type == 'rent'" class="btn btn-default" ng-click="vm.addNewRental(vm.newRental)">Add Rental</button>            
-            <button ng-show="type == 'sale'" class="btn btn-default" ng-click="vm.addNewListing(vm.newListing)">Add Listing</button>
+            <button ng-show="type == 'rent'" class="btn btn-default btn-lg" ng-click="vm.addNewRental(vm.newRental)">Add Rental</button>            
+            <button ng-show="type == 'sale'" class="btn btn-default btn-lg" ng-click="vm.addNewListing(vm.newListing)">Add Listing</button>
         </div>
     </div>
 </div>
