@@ -1,7 +1,5 @@
 function connect(){
     var mongoose = require('mongoose');
-    
-    // MONGOOSE CONNECTION
     var databaseUrl = 'mongodb://localhost:27017/realestate'; 
     mongoose.connect(databaseUrl);
     
