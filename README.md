@@ -7,15 +7,11 @@ https://real-estate-weekend-5.herokuapp.com/#!/
 
 ## Built With
 
-MongoDB
-Express
-AngularJS
-Node.js
-Bootstrap
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- MongoDB
+- Express
+- AngularJS
+- Node.js
+- Bootstrap
 
 ## Completed Features
 
@@ -25,7 +21,5 @@ These instructions will get you a copy of the project up and running on your loc
 - [X] 2 routes, each with a controller and template file. One set for "For Rent" properties and another set for "For Sale" properties
 - [X] Create an interface for adding additional rental or housing properties to the collection(s). You will need to give the user an option for either a Rent property, or a Sale property
 
-## Authors
-
-Name of author(s)
+## Author
 Ryan DeCook
